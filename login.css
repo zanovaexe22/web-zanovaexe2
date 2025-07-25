@@ -1,0 +1,101 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #1a1a1a;
+  position: relative;
+  min-height: 100vh;
+}
+
+.login-bg {
+  background: url('https://4kwallpapers.com/images/walls/thumbs_3t/22972.jpg') no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(3.5px) brightness(0.6);
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.login-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 350px;
+  padding: 32px 28px 20px 28px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 13px;
+  box-shadow: 0 6px 36px rgba(0,0,0,0.18);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 18px;
+  color: #0066cc;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.login-container .highlight {
+  color: #024c9c;
+}
+
+.login-container label {
+  display: block;
+  text-align: left;
+  margin: 11px 0 3px 3px;
+  color: #444;
+  font-weight: 500;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid #b7c4d7;
+  border-radius: 5px;
+  margin-bottom: 9px;
+  font-size: 1.08em;
+  background: #f4f6fa;
+  transition: border .2s;
+}
+
+.login-container input:focus {
+  border: 1.5px solid #0066cc;
+  outline: none;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px 0;
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.07em;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background .2s;
+}
+
+.login-container button:hover {
+  background: #024c9c;
+}
+
+#login-message {
+  margin-top: 13px;
+  font-size: 1em;
+  min-height: 24px;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    width: 90vw;
+    padding: 19px 4vw 12px 4vw;
+  }
+}
